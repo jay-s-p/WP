@@ -1,0 +1,27 @@
+<!-- 
+12. Write a JavaScript that handles following mouse event: 
+If button named “red” is clicked, background should change 
+to red and if button named “green” is clicked, background 
+should change to green. -->
+<html>
+
+<head>
+    <title>
+        Change Background Color
+    </title>
+</head>
+
+<body id="bodyTag">
+    <button onclick="Red()">Red</button>
+    <button onclick="Green()">Green</button>
+</body>
+<script>
+    function Red() {
+        document.getElementById("bodyTag").style.backgroundColor = 'red';
+    }
+    function Green() {
+        document.getElementById("bodyTag").style.backgroundColor = "green";
+    }
+</script>
+
+</html>

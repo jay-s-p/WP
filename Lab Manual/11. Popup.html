@@ -1,0 +1,36 @@
+<!--    
+11. Write a JavaScript program to display POPUPs Message 
+using Event. -->
+
+<html>
+    <head><title>Popup Messages</title></head>
+    <body>
+        <button onclick="alertMessage()">Alert Message</button>
+        <button onclick="confirmMessage()">Confirm Message</button>
+        <button onclick="promptMessage()">Prompt Message</button>
+    </body>
+        <script>
+            function alertMessage()
+            {
+                alert("This is alert Message");
+            }
+            function confirmMessage()
+            {
+                if(confirm("This is confirm Message.")){
+                    alert("You pressed 'OK'");
+                } else {
+                    alert("You pressed 'cancel'");
+                }
+            }
+            function promptMessage()
+            {
+                var x = prompt("This is prompt Message.\n Please Enter your name :-");
+                if(x != null)
+                {
+                    alert("Your name is " + x);
+                } else {
+                    alert("Your pressed 'cancel'")
+                }
+            }
+        </script>
+</html>
