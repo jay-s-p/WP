@@ -4,23 +4,24 @@ If button named “red” is clicked, background should change
 to red and if button named “green” is clicked, background 
 should change to green. -->
 <html>
-
-<head>
-    <title>
-        Change Background Color
-    </title>
-</head>
-
+<style>
+    .red{
+        background-color: red;  
+    }
+    .green{
+        background-color: green;  
+    }
+</style>
 <body id="bodyTag">
     <button onclick="Red()">Red</button>
     <button onclick="Green()">Green</button>
 </body>
 <script>
     function Red() {
-        document.getElementById("bodyTag").style.backgroundColor = 'red';
+        document.getElementById("bodyTag").className = 'red';
     }
     function Green() {
-        document.getElementById("bodyTag").style.backgroundColor = "green";
+        document.getElementById("bodyTag").className = "green";
     }
 </script>
 
