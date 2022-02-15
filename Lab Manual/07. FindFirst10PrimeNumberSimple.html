@@ -2,23 +2,3 @@
 7.  Create an HTML page with JavaScript, which takes one 
 integer number as input and tells whether the number is 
 prime or not.  -->
-<!-- Use console window to see the output. -->
-<html>
-<script>
-    count = 0;
-    var isPrime = function (x) {
-        let initialVal = 2;
-        while (initialVal < x) {
-            if (x % initialVal == 0) {
-                return;
-            } else
-                initialVal++;
-        }
-        console.log(x);
-        count++;
-    }
-    for (let i = 2; count < 10; i++) {
-        isPrime(i);
-    }
-</script>
-</html>
