@@ -1,0 +1,24 @@
+<!-- 
+1.  Intro to JavaScript: variable, datatype, operators, conditional 
+statement  -->
+<html>
+    <body>
+        <input id="op1">
+        <input id="op2">
+        <p id="result"></p>
+        <button onclick="calculate()">Calculate</button>
+    </body>
+    <script>
+        function calculate()
+        {
+            var result = document.getElementById("result");
+            var x = parseFloat(document.getElementById("op1").value);
+            var y = parseFloat(document.getElementById("op2").value);
+            result.innerHTML = "";
+            result.innerHTML =  "<br>x + y = " + (x + y) +
+                                "<br>x - y = " + (x - y) +
+                                "<br>x * y = " + (x * y) +
+                                "<br>x / y = " + (x / y);
+        }
+    </script>
+</html>
