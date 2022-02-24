@@ -1,12 +1,19 @@
 <!-- 
 8 Write a JavaScript conditional statement to sort three 
 numbers.  -->
+<!-- Sorting 3 elements -->
 <html>
-
 <body>
+    <input id="x">
+    <input id="y">
+    <input id="z"><br>
+    <input type="button" onclick="sort()" value="Submit">
 </body>
 <script>
-    function sort(x, y, z) {
+    function sort() {
+        x = parseInt(document.getElementById("x").value);
+        y = parseInt(document.getElementById("y").value);
+        z = parseInt(document.getElementById("z").value);
         if (x < y && x < z) {
             if (y < z)
                 document.write(x + " " + y + " " + z);
@@ -28,7 +35,5 @@ numbers.  -->
                 document.write(z + " " + y + " " + x);
         }
     }
-    sort(54, 28, 79);
 </script>
-
 </html>

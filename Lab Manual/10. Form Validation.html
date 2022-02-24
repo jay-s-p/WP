@@ -7,33 +7,37 @@ Both should not be blank.  -->
 <html>
 
 <head>
-    <title>Login Form</title>
+    <script>
+        function checkForm(form) {
+            if (form.username.value == "") {
+                alert("Username should not be blank")
+                return false;
+            }
+            re = /^[A-Za-z]+[A-Za-z0-9_]*$/;
+            if (!re.test(form.username.value)) {
+                alert("Username should not start with _, @ or number. ");
+                return false;
+            }
+            if (form.password.value == "") {
+                alert("Password should not be blank");
+                return false;
+            }
+            if (form.password.value.length < 6 || form.password.value.length > 12) {
+                alert("Password length must be 6 to 12 characters.");
+                return false;
+            }
+            alert("Thank You");
+            return true;
+        }
+    </script>
 </head>
 
 <body>
-    Username <input id="username" type="text">
-    <br>
-    Password <input id="password" type="text">
-    <br>
-    <button onclick="validate()">Submit</button>
+    <form onsubmit="return checkForm(this);" style="text-align:center;">
+        <p>Username:<input type="text" name="username"></p>
+        <p>Password:<input type="text" name="password"></p>
+        <input type="submit"></p>
+    </form>
 </body>
-<script>
-    function validate() {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if (username == "" || password == "") {
-            alert("Username or password is Empty.");
-        }
-        else if (password.length < 6 || password.length > 12) {
-            alert("Password must be between 6 and 12.");
-        }
-        else
-        {
-            var x = username.charAt(0);
-            if (x == "_" || x == "@" || !isNaN(x))
-                alert("Username should not start with '_', '@' or number.")
-        }
-    }
-</script>
 
 </html>

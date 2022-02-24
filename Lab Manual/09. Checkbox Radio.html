@@ -1,0 +1,43 @@
+<!-- 
+9.  Write a JavaScript to list selected checkbox and radio 
+buttons. -->
+<html>
+
+<body>
+    <form>
+        Select Gender :<br>
+        Male : <input type="radio" name="gender" value="Male"><br>
+        Female : <input type="radio" name="gender" value="Female"><br>
+        Other : <input type="radio" name="gender" value="other"><br>
+        <br>
+        Select Subjects :<br>
+        Maths : <input type="checkbox" name="sub" name="sub" value="Maths"><br>
+        English : <input type="checkbox" name="sub" value="Eng"><br>
+        WP : <input type="checkbox" name="sub" value="WP"><br>
+        <input type="button" value="Submit" onclick="abc()">
+        <p id="result"></p>
+        <p id="result2"></p>
+    </form>
+</body>
+<script>
+    function abc() {
+        result = document.getElementById("result");
+        result2 = document.getElementById("result2");
+        var sub = [];
+
+        var gender = document.getElementsByName("gender");
+        for (x of gender)
+            if (x.checked)
+                result.innerHTML = "Your gender : " + x.value;
+
+        var subjects = document.getElementsByName("sub");
+        for (x of subjects)
+            if (x.checked)
+                sub.push(x.value)
+        if(sub.length>0)
+            result2.innerHTML = "Selected subjects : " + sub;
+        
+    }
+</script>
+
+</html>
