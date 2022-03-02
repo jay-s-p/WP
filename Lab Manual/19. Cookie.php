@@ -9,3 +9,7 @@ upon reopening of the same page.
 	}
 	setcookie("dateAndTime", date("Y-m-d h:i:sa") , time() + (86400 * 30), "/");
 ?>
+<!-- 
+O\P :-
+Last visited on 2022-02-22 02:22:22pm
+-->
