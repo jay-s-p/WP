@@ -3,37 +3,36 @@
 <html>
 
 <body>
-    <h1>JavaScript Strings : </h1>
+    <h1>JS Strings : </h1>
     <p id=a></p>
-    <script>
-        var str = "Hello World";
-        document.getElementById("a").innerHTML = str;
-    </script>
-    <h1>JavaScript Numbers : </h1>
+    <h1>JS Numbers : </h1>
     <p id=b></p>
-    <script>
-        let num = 54;
-        let num2 = 108.28;
-        document.getElementById("b").innerHTML = "Roll no = " + num + "<br>Total marks = " + num2;
-    </script>
-    <h1>JavaScript Array : </h1>
+    <h1>JS Array : </h1>
     <p id=c></p>
-    <script>
-        cars = ["Lamborghini", " Bugatti", " Porsche"];
-        document.getElementById("c").innerHTML = "My Cars = " + cars;
-    </script>
 </body>
+<script>
+    var str = "Hello World";
+    document.getElementById("a").innerHTML = str;
+
+    let num = 54;
+    let num2 = 108.28;
+    document.getElementById("b").innerHTML = "Roll no = " + num 
+                                            + "<br>Total marks = " + num2;
+
+    cars = ["Lamborghini", " Bugatti", " Porsche"];
+    document.getElementById("c").innerHTML = "My Cars = " + cars;
+</script>
 
 </html>
 <!-- 
 O/P :-
-JavaScript Strings :
+JS Strings :
 Hello World
 
-JavaScript Numbers :
+JS Numbers :
 Roll no = 54
 Total marks = 108.28
 
-JavaScript Array :
+JS Array :
 My Cars = Lamborghini, Bugatti, Porsche
 -->
