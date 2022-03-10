@@ -5,26 +5,26 @@ using Event. -->
 <html>
     <head><title>Popup Messages</title></head>
     <body>
-        <button onclick="alertMessage()">Alert Message</button>
-        <button onclick="confirmMessage()">Confirm Message</button>
-        <button onclick="promptMessage()">Prompt Message</button>
+        <button onclick="alertMsg()">Alert Message</button>
+        <button onclick="confirmMsg()">Confirm Message</button>
+        <button onclick="promptMsg()">Prompt Message</button>
     </body>
         <script>
-            function alertMessage()
+            function alertMsg()
             {
                 alert("This is alert Message");
             }
-            function confirmMessage()
+            function confirmMsg()
             {
-                if(confirm("This is confirm Message.")){
+                if(confirm("This is confirm Message."))
                     alert("You pressed 'OK'");
-                } else {
+                else 
                     alert("You pressed 'cancel'");
-                }
+
             }
-            function promptMessage()
+            function promptMsg()
             {
-                var x = prompt("This is prompt Message.\n Please Enter your name :-");
+                var x = prompt("Please Enter your name :-");
                 if(x != null)
                 {
                     alert("Your name is " + x);
